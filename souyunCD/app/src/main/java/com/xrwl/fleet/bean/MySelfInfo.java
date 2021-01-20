@@ -36,25 +36,11 @@ public class MySelfInfo {
     public void setLoginData(LoginBean model, String phone){
         SPUtils.getInstance().putString(SPUtils.SP_USER_TOKEN, model.getToken());
         SPUtils.getInstance().putString(SPUtils.SP_USER_ID, model.getUserId());
-        SPUtils.getInstance().putString(SPUtils.SP_USER_USERSTATE, model.getUserState());
         SPUtils.getInstance().putString(SPUtils.SP_USER_MOBILE, phone);
-        SPUtils.getInstance().putString(SPUtils.SP_USER_SHARE_URL, model.getShareUrl());
-        SPUtils.getInstance().putString(SPUtils.SP_USER_INVITE_CODE, model.getInviteCode());
     }
 
     public String getUserId(){
         return SPUtils.getInstance().getString(SPUtils.SP_USER_ID);
-    }
-
-    public String getUserState(){
-        return SPUtils.getInstance().getString(SPUtils.SP_USER_USERSTATE);
-    }
-
-    public String getShareUrl(){
-        return SPUtils.getInstance().getString(SPUtils.SP_USER_SHARE_URL);
-    }
-    public String getInviteCode(){
-        return SPUtils.getInstance().getString(SPUtils.SP_USER_INVITE_CODE);
     }
 
     public String getUserToken() {

@@ -16,17 +16,7 @@ public class LoginBean {
 
     private String token;
     private String userId;
-    private String userState;
-    private String inviteCode;
-    private String shareUrl;
 
-    public String getInviteCode() {
-        return inviteCode;
-    }
-
-    public String getShareUrl() {
-        return shareUrl;
-    }
 
     public String getToken() {
         return token;
@@ -37,8 +27,13 @@ public class LoginBean {
         return userId;
     }
 
-    public String getUserState() {
-        return userState;
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
 }
