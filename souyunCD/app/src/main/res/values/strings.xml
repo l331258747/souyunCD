@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">souyunCD</string>
+
+    <string name="str_tab_order">订单</string>
+    <string name="str_tab_fleet">车队</string>
+    <string name="str_tab_my">我的</string>
+
+    <string name="verify"><Data><![CDATA[重新发送<font color="#dd0000">%ds</font>]]></Data></string>
+
+</resources>
