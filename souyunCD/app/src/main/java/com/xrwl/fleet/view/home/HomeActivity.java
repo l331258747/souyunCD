@@ -7,6 +7,8 @@ import com.xrwl.fleet.R;
 import com.xrwl.fleet.base.BaseActivity;
 import com.xrwl.fleet.base.BaseFragment;
 import com.xrwl.fleet.util.StatusBarUtil;
+import com.xrwl.fleet.view.home.fragment.FleetFragment;
+import com.xrwl.fleet.view.home.fragment.MyFragment;
 import com.xrwl.fleet.view.home.fragment.OrderFragment;
 import com.xrwl.fleet.widget.tab.TabItem;
 import com.xrwl.fleet.widget.tab.TabLayout;
@@ -47,8 +49,8 @@ public class HomeActivity extends BaseActivity implements TabLayout.OnTabClickLi
         // 初始化页面
         try {
             fragmentCls[0] = OrderFragment.class;
-            fragmentCls[1] = OrderFragment.class;
-            fragmentCls[2] = OrderFragment.class;
+            fragmentCls[1] = FleetFragment.class;
+            fragmentCls[2] = MyFragment.class;
 
             fragments[0] = (BaseFragment) fragmentCls[0].newInstance();
             fragments[1] = (BaseFragment) fragmentCls[1].newInstance();
